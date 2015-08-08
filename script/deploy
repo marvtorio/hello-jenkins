@@ -2,7 +2,8 @@
  
 ssh app@104.236.170.129 <<EOF
   cd ~/hello-jenkins
-  uname -a
-  pwd
+  git pull
+  npm install --production
+  forever restartall
   exit
 EOF
